@@ -1,0 +1,12 @@
+<html>
+    <body>
+    <center><h1>Dogs or Cats</h1></center>
+    <p>Javascript can change HTML attribute values</p>
+    <p>In this case, we wnat JS to change our image if we press a button: change the src attribute</p>
+    <center>
+        <button onClick="document.getElementById('cat').style.display='none'"> I dont like animals</button>
+        <br />
+    </center>
+    <button onClick="document.getElementById('cat').src='dog.jpg'; document.getElementById('cat').style.display='block'">I like dogs</button>
+    <button onClick="document.getElementById('cat').src='cat.jpg', document.getElementById('cat').style.display='block'">I like cats</button>
+<img src="cat.jpg" id="cat" style="width:100px">
